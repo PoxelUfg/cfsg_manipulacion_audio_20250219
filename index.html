@@ -64,66 +64,78 @@
 			  </div>
 		</nav>
 		<main>
-			<h1>Reproduccion de audio (etiqueta &lt;audio&gt;)</h1>
 			<div>
-				<span>Etiqueta de audio unicamente con source</span>
-				<audio id="ejemplo1" src="media/sounds/01GroundTheme.mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
+				<h1>Reproducción de audio (etiqueta &lt;audio&gt;)</h1>
+				<div>
+					<span>Etiqueta de audio unicamente con source</span>
+					<audio id="ejemplo1" src= "media\sounds\ritmo-132991.mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+				</div>
+                <div>
+					<span>Etiqueta de audio unicamente con source y type</span>
+					<audio id="ejemplo2" src= "media\sounds\102-bass-break-76768.mp3" type="audio/mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+                <div>
+					<span>Etiqueta de audio unicamente con source, type y contols</span>
+					<audio controls id="ejemplo3" src= "media\sounds\random-midi-drum-set-28012.mp3" type="audio/mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+				<div>
+					<span>Etiqueta de audio unicamente con source, type, contols y autoplay</span>
+					<audio controls autoplay id="ejemplo4" src= "media\sounds\eerily-ascend-167253.mp3" type="audio/mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+				<div>
+					<span>Etiqueta de audio unicamente con source, type, contols, autoplay y loop</span>
+					<audio controls autoplay loop id="ejemplo5" src= "media\sounds\03UnderwaterTheme.mp3" type="audio/mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+				<div>
+					<span>Etiqueta de audio unicamente con source, type, contols, autoplay, loop y muted</span>
+					<audio controls autoplay loop muted id="ejemplo6" src= "media\sounds\02UndergroundTheme.mp3" type="audio/mp3"> 
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+				<div>
+					<span>Etiqueta de audio con source multiples tipos</span>
+					<audio controls autoplay loop> 
+						<source src="media/sounds/generative-sampler-random-sfx-2-66301.mp3" type="audio/mp3">
+						<source src="media/sounds/102-bass-break-76768.mp3" type="audio/mp3">
+						Lo siento, su navegador no permite reproducir audio
+					</audio>
+					<!--El type puede ser audio/ogg , audio/wav , audio/midi , audio /mp3-->
+				</div>
+				<div>
+					<h1>REPRODUCTOR IMPROVISADO</h1>
+					<audio id="reproductor">
+						<source src="media/sounds/boss-sp-303-drum-rhythm-200-bpm-8437.mp3" type="audio/mp3" />
+
+					</audio>
+					<button type="button" id="play" class="btn btn-primary">Reproducir</button>
+					<button type="button" id="pause" class="btn btn-danger">Pausar</button>
+				</div>
 			</div>
-			<div>
-				<span>Etiqueta de audio unicamente con source y type y controls</span>
-				<audio id="ejemplo2" src="media/sounds/03UnderwaterTheme.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
+
+			<div id="drumSet">
+				<button type="button" id="KeyW" class="btn btn-secondary">Tambor 1</button>
+				<button type="button" id="KeyA" class="btn btn-secondary">Tambor 2</button>
+				<button type="button" id="KeyS" class="btn btn-secondary">Tambor 3</button>
+				<button type="button" id="KeyD" class="btn btn-secondary">Tambor 4</button>
+				<button type="button" id="KeyJ" class="btn btn-secondary">Snare</button>
+				<button type="button" id="KeyK" class="btn btn-secondary">Crash</button>
+				<button type="button" id="KeyL" class="btn btn-secondary">Kick-Bass</button>
 			</div>
-			<div>
-				<span>Etiqueta de audio unicamente con source y type y controls</span>
-				<audio controls id="ejemplo3" src="media/sounds/03UnderwaterTheme.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
-			</div>
-			<div>
-				<span>Etiqueta de audio unicamente con source y type y controls</span>
-				<audio controls autoplay id="ejemplo4" src="media/sounds/03UnderwaterTheme.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
-			</div>
-			<div>
-				<span>Etiqueta de audio unicamente con source y type y controls y auronplay</span>
-				<audio controls autoplay loop id="ejemplo5" src="media/sounds/03UnderwaterTheme.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
-			</div>
-			<div>
-				<span>Etiqueta de audio unicamente con source y type y controls y auronplay y muted</span>
-				<audio controls autoplay loop muted id="ejemplo5" src="media/sounds/03UnderwaterTheme.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
-			</div>
-			<div>
-				<span>Etiqueta de audio con surce  multiples tipos</span>
-				<audio controls autoplay loop>
-					<source src="media/sounds/102-bass-break-76768.mp3" type="audio/mp3">
-					<source src="media/sounds/phz_135_pad-83906.mp3" type="audio/mp3">
-					Lo siento, su navegador no permite la ejecucion de audio
-				</audio>
-				<!--El type puede ser audio/ogg , audio/wav, audio/midi, audio/mp3-->
-			</div>
-			<div>
-				<h1>Reproductor imporvisado</h1>
-				<audio id="Reproductor">
-					<source src="media/sounds/788470__newlocknew__scne_a-creepy-red-corridor-and-a-scary-room.mp3" type="audio/mp3">
-				</audio>
-				<button type="button" id="play" class="btn btn-primary">reproducir</button>
-				<button type="button" id="pause" class="btn btn-primary">pausar</button>
-			</div>
-			
 		</main>
 		<script type="text/javascript">
 			window.onload = () => {
@@ -134,14 +146,46 @@
 				play.onclick = playAudio;
 				pause.onclick = pauseAudio;
 
-				function playAudio() {
+				function playAudio(){
 					audio.play();
 				}
-
-				function pauseAudio() {
+				function pauseAudio(){
 					audio.pause();
-				}
+				}		  
 			}
+
+		</script>
+
+		<script type="text/javascript">
+			const sounds = {
+			'KeyW':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/tom1.ogg',
+			'KeyA':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/tom2.ogg',
+			'KeyS':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/tom3.ogg',
+			'KeyD':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/pad1.ogg',
+			'KeyJ':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/snare1.ogg',
+			'KeyK':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/crash1.ogg',
+			'KeyL':'http://www.virtualdrumming.com/drums/virtual-drum-sounds/hip-hop/kik.ogg'
+			}
+			
+			const play = sound => {
+				console.log("playing",sound);
+				var audio = new Audio(sound);
+				audio.play();
+			}
+
+			document.getElementById('drumSet').addEventListener('click',function(e){
+				const tgt = e.target.closest('button');
+				if(tgt) play(sounds[tgt.id])
+			});
+
+			window.addEventListener('keypress',function(e){
+				console.log(e.code);
+				if(sounds[e.code]){
+					console.log("presionado",e.code);
+					document.getElementById(e.code).click();
+				}
+			});
+		    
 		</script>
 	</body>
 </html>
